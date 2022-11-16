@@ -1,2 +1,141 @@
 Paractica de HTML
-Pagina de estructura para crear un reporteador del SVCV
+Pagina de estructura para crear un reporteador del SVCV, faltan afinar más detalles y reestructurar la idea pero fue una prueba para poner en marcha la idea de como quedaria 
+antes del CSS, falta pulir mucho esta pagina.
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pagina de prueba</title>
+
+        <!--Lo primero que vamos a ver es un modelo de cajas, el cual se va a hacer con la función section, veremos ademas otraas funciones como div que es similar a section pero 
+        se encarga de dividir, tambien estara article que usaremos para incluir información -->
+    </head>
+    <body>
+        <header>
+            <h1>Prueba de pagina de reporteador</h1>
+        </header>
+
+        <img src="" alt="Instituto Nacional Electoral">
+<hr>
+        <h2>Reportes</h2>
+        <input type="radio" id="Estadistico" name="Reportes" value="Estadistico">
+        <label for="Estadistico"> Estadistico</label><br>
+        <label for="Estadistico">Site</label><br>
+          <input list="Site">
+          <datalist id="Site">
+            <option value="CDMX">
+            <option value="Pachuca">
+          </datalist><br>
+          <label for="Estadistico">Año</label><br>
+          <input list="Año">
+          <datalist id="Año">
+            <option value="2020">
+            <option value="2022">
+            <option value="2022"></option>
+          </datalist><br>
+          <label for="Estadistico">Mes</label><br>
+          <input list="Mes">
+          <datalist id="Mes">
+            <option value="Enero">
+            <option value="Febrero">
+            <option value="Marzo">
+            <option value="Abril">
+            <option value="Mayo">
+            <option value="Junio">
+            <option value="Julio">
+            <option value="Agosto">  
+            <option value="Septiembre">
+            <option value="Octubre">
+            <option value="Noviembre">
+            <option value="Diciembre">
+          </datalist><br>
+        <input type="radio" id="Nominativo" name="Reportes" value="Nominativo">
+        <label for="Nominativo"> Nominativo</label><br>
+
+        <hr>
+
+        <h2>Certificados</h2>
+        <input type="radio" id="Administración" name="Certificados" value="Administración">
+        <label for="Administración">Administración</label>
+
+        <h2>Reportes extendidos</h2>
+        <input type="radio" id="Nominativo" name="Reportes extendidos" value="Nominativo">
+        <label for="Nominativo">Nominativo</label><br>
+        <input type="radio" id="Por transacción" name="Reportes extendidos"  value="Por transacción">
+        <label for="Por transacción">Por transacción</label>
+
+        <h2>Generación de reportes</h2> 
+        <input type="radio"  id="Generación de reportes" name="Generación de reportes" value="Generación de reportes">
+        <label for="Generación de reportes">Generación de reportes</label><br>
+        <input type="radio" name="Generación de reportes" id="Consultar Bitácora" value="Consultar Bitácora">
+        <label for="Consultar Bitácora">Consultar Bitácora</label>
+
+        <h2>Consulta</h2>
+        <input type="radio" name="Consulta" id="Estadistico" value="Estadistico">
+        <label for="Estadistico">Estadistico</label><br>
+        <input type="radio" name="Consulta" id="Nominativo" value="Nominativo" >
+        <label for="Nominativo">Nominativo</label>
+
+        <hr>
+
+        <h2>Ubicación Oficinas INE</h2>
+        <h3>Sucursales</h3>
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Ubicacion</th>
+                <th>Horario</th>
+                <th>Telefonos</th>
+            </tr>
+            <tr>
+                <td>Insurgentes</td>
+                <td><a href="https://goo.gl/maps/wMSV2nbULZ8VL4v4A" target="_blank"> Av. Insurgentes Sur 1391</a></td>
+                <td>09:00-19:00</td>
+                <td>01 800 433 2000</td>
+            </tr>
+            <tr>
+                <td>Quantum</td>
+                <td><a href="https://goo.gl/maps/169ARRcTXymavax47" target="_blank">Calzada de los Leones 243</a></td>
+                <td>09:00-17:00</td>
+                <td>55 5490 9000</td>
+            </tr>
+            <tr>
+            <td>Zafiro</td>
+                <td><a href="https://goo.gl/maps/ZKMUPeWu888XkWzQ7" target="_blank">Periferico Sur 4124</a></td>
+                <td>09:00-17:00</td>
+                <td>8004332000</td>
+            </tr>
+
+        </table>
+        
+        <hr>
+
+        <h2>Consultas en Línea</h2>
+        <form action="">
+        <p>De que oficina requieres asesoria</p>
+        <select>
+            <option value="Insurgentes">Insurgentes</option>
+            <option value="Quantum">Quantum</option>
+            <option value="Zafiro">Zafiro</option>
+        </select>
+        <p>De que área</p>
+            <input type="checkbox" name="SVCV" id="SVCV" value="SVCV">
+            <label for="SVCV">SVCV</label>
+            <input type="text" name="Persona" id="Persona" placeholder="¿A quien se dirige?">
+            <br>
+            <input type="checkbox" name="DDOS" id=" DDOS" value="DDOS">
+            <label for="DDOS">DDOS</label>
+            <input type="text" name="Persona" id="Persona" placeholder="¿A quien se dirige?">
+            <br>
+            <input type="Checkbox" name="SSI" id="SSI" value="SSI">
+            <label for="SSI">SSI</label>
+            <input type="text" name="Persona" id="Persona" placeholder="¿A quien se dirige?">
+            <br>
+    </form>
+
+    </body>
+</html>
