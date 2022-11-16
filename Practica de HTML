@@ -21,6 +21,7 @@ antes del CSS, falta pulir mucho esta pagina.
 
         <img src="" alt="Instituto Nacional Electoral">
 <hr>
+<section>
         <h2>Reportes</h2>
         <input type="radio" id="Estadistico" name="Reportes" value="Estadistico">
         <label for="Estadistico"> Estadistico</label><br>
@@ -56,8 +57,9 @@ antes del CSS, falta pulir mucho esta pagina.
         <input type="radio" id="Nominativo" name="Reportes" value="Nominativo">
         <label for="Nominativo"> Nominativo</label><br>
 
+</section>       
         <hr>
-
+<section>
         <h2>Certificados</h2>
         <input type="radio" id="Administración" name="Certificados" value="Administración">
         <label for="Administración">Administración</label>
@@ -79,7 +81,7 @@ antes del CSS, falta pulir mucho esta pagina.
         <label for="Estadistico">Estadistico</label><br>
         <input type="radio" name="Consulta" id="Nominativo" value="Nominativo" >
         <label for="Nominativo">Nominativo</label>
-
+</section>
         <hr>
 
         <h2>Ubicación Oficinas INE</h2>
